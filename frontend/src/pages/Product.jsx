@@ -14,11 +14,11 @@ export default function Product() {
 
   useEffect(() => {
 
-    fetch(`http://localhost:5000/api/products/${id}`)
+    fetch(`${process.env.REACT_APP_API_URL}/api/products/${id}`)
       .then(res => res.json())
       .then(data => setProduct(data));
 
-    fetch(`http://localhost:5000/api/products`)
+    fetch(`${process.env.REACT_APP_API_URL}/api/products`)
       .then(res => res.json())
       .then(data => setSimilarProducts(data.slice(0,4)));
 
@@ -26,7 +26,7 @@ export default function Product() {
 
    const addToWishlist = async () => {
 
-    await fetch("http://localhost:5000/api/wishlist/add", {
+    await fetch("${process.env.REACT_APP_API_URL}/api/wishlist/add", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"

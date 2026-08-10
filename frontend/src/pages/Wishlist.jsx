@@ -29,7 +29,7 @@ export default function Wishlist() {
   const fetchWishlist = async () => {
     try {
       const res = await fetch(
-        `http://localhost:5000/api/wishlist/${userId}`
+        `${process.env.REACT_APP_API_URL}/api/wishlist/${userId}`
       );
 
       if (!res.ok) {
@@ -69,7 +69,7 @@ export default function Wishlist() {
   const removeItem = async (productId) => {
     try {
       const res = await fetch(
-        `http://localhost:5000/api/wishlist/${productId}/${userId}`,
+        `${process.env.REACT_APP_API_URL}/api/wishlist/${productId}/${userId}`,
         {
           method: "DELETE",
         }
@@ -136,7 +136,7 @@ export default function Wishlist() {
       setAddingToCart(productId);
 
       const res = await fetch(
-        "http://localhost:5000/api/cart/add",
+        "${process.env.REACT_APP_API_URL}/api/cart/add",
         {
           method: "POST",
 

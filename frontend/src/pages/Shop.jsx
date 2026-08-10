@@ -48,7 +48,7 @@ export default function Shop() {
         const search = params.get("search");
 
         let url =
-          "http://localhost:5000/api/products?";
+          "${process.env.REACT_APP_API_URL}/api/products?";
 
         if (search) {
           url += `search=${search}&`;
@@ -126,7 +126,7 @@ export default function Shop() {
     const fetchWishlist = async () => {
       try {
         const res = await fetch(
-          `http://localhost:5000/api/wishlist/${userId}`
+          `${process.env.REACT_APP_API_URL}/api/wishlist/${userId}`
         );
 
         const data = await res.json();
@@ -159,7 +159,7 @@ export default function Shop() {
     try {
       if (isWishlisted) {
         await fetch(
-          `http://localhost:5000/api/wishlist/${productId}/${userId}`,
+          `${process.env.REACT_APP_API_URL}/api/wishlist/${productId}/${userId}`,
           {
             method: "DELETE",
           }
@@ -181,7 +181,7 @@ export default function Shop() {
         );
       } else {
         await fetch(
-          "http://localhost:5000/api/wishlist/add",
+          "${process.env.REACT_APP_API_URL}/api/wishlist/add",
           {
             method: "POST",
 
@@ -232,7 +232,7 @@ export default function Shop() {
 
     try {
       await fetch(
-        "http://localhost:5000/api/cart/add",
+        "${process.env.REACT_APP_API_URL}/api/cart/add",
         {
           method: "POST",
 

@@ -59,13 +59,13 @@ const Navbar = () => {
     const fetchCounts = async () => {
       try {
         const cartRes = await fetch(
-          `http://localhost:5000/api/cart/${userId}`
+          `${process.env.REACT_APP_API_URL}/api/cart/${userId}`
         );
 
         const cartData = await cartRes.json();
 
         const wishRes = await fetch(
-          `http://localhost:5000/api/wishlist/${userId}`
+          `${process.env.REACT_APP_API_URL}/api/wishlist/${userId}`
         );
 
         const wishData = await wishRes.json();

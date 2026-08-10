@@ -14,7 +14,7 @@ export default function Cart() {
   const fetchCart = async () => {
     try {
       const res = await fetch(
-        `http://localhost:5000/api/cart/${userId}`
+        `${process.env.REACT_APP_API_URL}/api/cart/${userId}`
       );
 
       const data = await res.json();
@@ -33,7 +33,7 @@ export default function Cart() {
   const removeItem = async (productId) => {
     try {
       await fetch(
-        `http://localhost:5000/api/cart/${productId}/${userId}`,
+        `${process.env.REACT_APP_API_URL}/api/cart/${productId}/${userId}`,
         {
           method: "DELETE",
         }
@@ -59,7 +59,7 @@ export default function Cart() {
   const updateQuantity = async (productId, qty) => {
     try {
       await fetch(
-        "http://localhost:5000/api/cart/update",
+        "${process.env.REACT_APP_API_URL}/api/cart/update",
         {
           method: "PUT",
           headers: {

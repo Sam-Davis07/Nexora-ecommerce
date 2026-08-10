@@ -136,7 +136,7 @@ export default function Wishlist() {
       setAddingToCart(productId);
 
       const res = await fetch(
-        "${process.env.REACT_APP_API_URL}/api/cart/add",
+        `${process.env.REACT_APP_API_URL}/api/cart/add`,
         {
           method: "POST",
 

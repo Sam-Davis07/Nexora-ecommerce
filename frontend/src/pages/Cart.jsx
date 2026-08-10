@@ -7,7 +7,7 @@ import { toast } from "react-toastify";
 export default function Cart() {
   const [cart, setCart] = useState([]);
 
-  const { cartCount, setCartCount } = useContext(StoreContext);
+  const { setCartCount } = useContext(StoreContext);
 
   const userId = 1;
 
@@ -59,7 +59,7 @@ export default function Cart() {
   const updateQuantity = async (productId, qty) => {
     try {
       await fetch(
-        "${process.env.REACT_APP_API_URL}/api/cart/update",
+        `${process.env.REACT_APP_API_URL}/api/cart/update`,
         {
           method: "PUT",
           headers: {

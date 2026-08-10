@@ -39,19 +39,31 @@ export default function Footer() {
 
           <div className="footer-socials">
 
-            <a href="#" aria-label="Instagram">
+            <a
+  href="https://www.instagram.com/"
+  target="_blank"
+  rel="noreferrer" aria-label="Instagram">
               <FaInstagram />
             </a>
 
-            <a href="#" aria-label="Twitter">
+            <a
+  href="https://www.twitter.com/"
+  target="_blank"
+  rel="noreferrer" aria-label="Twitter">
               <FaTwitter />
             </a>
 
-            <a href="#" aria-label="Facebook">
+            <a
+  href="https://www.facebook.com/"
+  target="_blank"
+  rel="noreferrer" aria-label="Facebook">
               <FaFacebookF />
             </a>
 
-            <a href="#" aria-label="GitHub">
+            <a
+  href="https://www.gitHub.com/"
+  target="_blank"
+  rel="noreferrer" aria-label="GitHub">
               <FaGithub />
             </a>
 

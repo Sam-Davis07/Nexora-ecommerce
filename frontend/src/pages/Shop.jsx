@@ -48,7 +48,7 @@ export default function Shop() {
         const search = params.get("search");
 
         let url =
-          "${process.env.REACT_APP_API_URL}/api/products?";
+          `${process.env.REACT_APP_API_URL}/api/products?`;
 
         if (search) {
           url += `search=${search}&`;
@@ -181,7 +181,7 @@ export default function Shop() {
         );
       } else {
         await fetch(
-          "${process.env.REACT_APP_API_URL}/api/wishlist/add",
+          `${process.env.REACT_APP_API_URL}/api/wishlist/add`,
           {
             method: "POST",
 
@@ -232,7 +232,7 @@ export default function Shop() {
 
     try {
       await fetch(
-        "${process.env.REACT_APP_API_URL}/api/cart/add",
+        `${process.env.REACT_APP_API_URL}/api/cart/add`,
         {
           method: "POST",
 

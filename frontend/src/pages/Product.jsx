@@ -26,7 +26,7 @@ export default function Product() {
 
    const addToWishlist = async () => {
 
-    await fetch("${process.env.REACT_APP_API_URL}/api/wishlist/add", {
+    await fetch(`${process.env.REACT_APP_API_URL}/api/wishlist/add`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json"

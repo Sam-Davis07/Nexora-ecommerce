@@ -1,4 +1,4 @@
-# 🛍️ Nexora — Full-Stack E-Commerce Platform
+# Nexora — Full-Stack E-Commerce Platform
 
 Nexora is a modern full-stack e-commerce platform built to provide a clean, responsive, and seamless online shopping experience.
 
@@ -6,19 +6,13 @@ The platform allows users to browse products, search and filter products, manage
 
 ---
 
-## 🌐 Live Demo
-
-🚀 **[View Nexora Live](YOUR_VERCEL_URL)**
-
-> Replace `YOUR_VERCEL_URL` with the deployed Vercel URL.
-
-Example:
+## Live Demo
 
 https://nexora-ecommerce.vercel.app
 
 ---
 
-## 📸 Preview
+## Preview
 
 Nexora provides a modern shopping experience with:
 
@@ -33,9 +27,9 @@ Nexora provides a modern shopping experience with:
 
 ---
 
-# ✨ Features
+# Features
 
-## 🏠 Home Page
+## Home Page
 
 - Modern hero section
 - Featured categories
@@ -46,7 +40,7 @@ Nexora provides a modern shopping experience with:
 
 ---
 
-## 🛍️ Product Shopping
+## Product Shopping
 
 Users can:
 
@@ -72,7 +66,7 @@ Users can:
 
 ---
 
-## ❤️ Wishlist
+## Wishlist
 
 Users can:
 
@@ -86,7 +80,7 @@ The wishlist is connected to the backend and persists through the database.
 
 ---
 
-## 🛒 Shopping Cart
+## Shopping Cart
 
 Users can:
 
@@ -101,7 +95,7 @@ The cart communicates with the backend through REST APIs.
 
 ---
 
-## 🔔 Notifications
+## Notifications
 
 The application uses toast notifications to provide feedback for actions such as:
 
@@ -113,22 +107,22 @@ The application uses toast notifications to provide feedback for actions such as
 
 ---
 
-## 📱 Responsive Design
+## Responsive Design
 
 Nexora is designed to work across different screen sizes.
 
 ### Supported Devices
 
-- 💻 Desktop
-- 💻 Laptop
-- 📱 Tablet
-- 📱 Mobile
+- Desktop
+- Laptop
+- Tablet
+- Mobile
 
 The navigation, product grids, shopping cart, wishlist, and other sections adapt to smaller screens.
 
 ---
 
-# 🛠️ Tech Stack
+# Tech Stack
 
 ## Frontend
 
@@ -159,7 +153,7 @@ The navigation, product grids, shopping cart, wishlist, and other sections adapt
 
 ---
 
-# 🏗️ Application Architecture
+# Application Architecture
 
 Nexora follows a frontend-backend architecture:
 

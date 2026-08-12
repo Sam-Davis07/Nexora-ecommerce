@@ -1,4 +1,4 @@
-# Nexora — Full-Stack E-Commerce Platform
+# Nexora — E-Commerce
 
 Nexora is a modern full-stack e-commerce platform built with React, Node.js, Express, and Supabase.
 
@@ -201,3 +201,221 @@ Nexora follows a frontend-backend architecture where the React frontend communic
                                              │   Supabase   │
                                              │  PostgreSQL  │
                                              └──────────────┘
+````
+
+---
+
+# Project Structure
+
+```text
+Nexora-Full-Stack-E-Commerce-Platform/
+│
+├── frontend/
+│   ├── public/
+│   ├── src/
+│   │   ├── components/
+│   │   ├── context/
+│   │   ├── pages/
+│   │   ├── styles/
+│   │   └── App.js
+│   │
+│   ├── package.json
+│   └── README.md
+│
+├── backend/
+│   ├── config/
+│   │   └── supabase.js
+│   │
+│   ├── routes/
+│   │   ├── productRoutes.js
+│   │   ├── cartRoutes.js
+│   │   └── wishlistRoutes.js
+│   │
+│   ├── server.js
+│   ├── package.json
+│   └── .env
+│
+└── README.md
+```
+
+---
+
+# API Endpoints
+
+## Products
+
+### Get Products
+
+```http
+GET /api/products
+```
+
+Supports:
+
+* Search
+* Gender filtering
+* Stock filtering
+* Price filtering
+* Category filtering
+* Price sorting
+
+### Get Single Product
+
+```http
+GET /api/products/:id
+```
+
+---
+
+## Cart
+
+### Add Product
+
+```http
+POST /api/cart/add
+```
+
+### Get Cart
+
+```http
+GET /api/cart/:userId
+```
+
+### Update Quantity
+
+```http
+PUT /api/cart/update
+```
+
+### Remove Product
+
+```http
+DELETE /api/cart/:productId/:userId
+```
+
+---
+
+## Wishlist
+
+### Add Product
+
+```http
+POST /api/wishlist/add
+```
+
+### Get Wishlist
+
+```http
+GET /api/wishlist/:userId
+```
+
+### Remove Product
+
+```http
+DELETE /api/wishlist/:productId/:userId
+```
+
+---
+
+# Deployment
+
+Nexora is deployed using a modern cloud architecture.
+
+### Frontend
+
+The React frontend is deployed on:
+
+Vercel
+
+### Backend
+
+The Express backend is deployed on:
+
+Render
+
+### Database
+
+The application uses:
+
+Supabase
+
+---
+
+# Project Goals
+
+The main goals of Nexora were to:
+
+* Build a complete full-stack e-commerce application
+* Practice React application architecture
+* Build and consume REST APIs
+* Work with a cloud-hosted database
+* Implement shopping cart functionality
+* Implement wishlist functionality
+* Build responsive user interfaces
+* Learn production deployment
+* Connect frontend, backend, and database services
+
+---
+
+# Future Improvements
+
+Potential future improvements include:
+
+* User authentication
+* Multi-user accounts
+* Product reviews and ratings
+* Payment gateway integration
+* Order management
+* Order history
+* Admin dashboard
+* Inventory management
+* Product image uploads
+* Advanced product recommendations
+* Improved authentication and authorization
+* Automated testing
+
+---
+
+# What I Learned
+
+Through this project, I gained practical experience with:
+
+* React component architecture
+* React Router
+* State management using Context API
+* REST API development
+* Express.js backend development
+* Database integration
+* Supabase
+* CRUD operations
+* Search and filtering
+* Cart and wishlist logic
+* Responsive UI development
+* Git and GitHub
+* Environment variables
+* Vercel deployment
+* Render deployment
+* Connecting frontend and backend in production
+
+---
+
+# Author
+
+## Sam Davis
+
+Full-Stack Developer focused on building modern and production-ready web applications.
+
+### Connect With Me
+
+* Portfolio: [https://portfolio-evtju3o2q-sam-davis07s-projects.vercel.app/](https://portfolio-evtju3o2q-sam-davis07s-projects.vercel.app/)
+* GitHub: [https://github.com/Sam-Davis07](https://github.com/Sam-Davis07)
+
+---
+
+## If you found this project interesting
+
+Feel free to explore the project, check out the live demo, and follow my development journey.
+
+````
+
+That looks more professional and reinforces that your credentials are kept private.

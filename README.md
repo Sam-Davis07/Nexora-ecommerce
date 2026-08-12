@@ -408,7 +408,7 @@ Full-Stack Developer focused on building modern and production-ready web applica
 
 ### Connect With Me
 
-* Portfolio: [https://portfolio-evtju3o2q-sam-davis07s-projects.vercel.app/](https://portfolio-evtju3o2q-sam-davis07s-projects.vercel.app/)
+* Portfolio: [https://portfolio-omega-jade-30.vercel.app/](https://portfolio-omega-jade-30.vercel.app/)
 * GitHub: [https://github.com/Sam-Davis07](https://github.com/Sam-Davis07)
 
 ---

@@ -27,7 +27,8 @@ Nexora provides a modern shopping experience with:
 - Responsive design
 - Toast notifications
 
-> Screenshots can be added to this section as the project evolves.
+<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/df0c9a38-9aa2-41ce-89d0-08ad8cc38f5b" />
+
 
 ---
 

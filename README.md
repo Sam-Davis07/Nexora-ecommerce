@@ -1,14 +1,16 @@
 # Nexora — Full-Stack E-Commerce Platform
 
-Nexora is a modern full-stack e-commerce platform built to provide a clean, responsive, and seamless online shopping experience.
+Nexora is a modern full-stack e-commerce platform built with React, Node.js, Express, and Supabase.
 
-The platform allows users to browse products, search and filter products, manage their wishlist, add products to their shopping cart, update quantities, and manage their shopping experience through a modern responsive interface.
+The application provides a complete shopping experience where users can discover products, search and filter products, manage wishlists, add products to a shopping cart, update quantities, and browse the store through a responsive modern interface.
+
+The project is deployed using Vercel for the frontend and Render for the backend, with Supabase providing the cloud database.
 
 ---
 
 ## Live Demo
 
-https://nexora-ecommerce.vercel.app
+[View Nexora Live](https://nexora-ecommerce-gamma.vercel.app/)
 
 ---
 
@@ -25,6 +27,8 @@ Nexora provides a modern shopping experience with:
 - Responsive design
 - Toast notifications
 
+> Screenshots can be added to this section as the project evolves.
+
 ---
 
 # Features
@@ -32,11 +36,12 @@ Nexora provides a modern shopping experience with:
 ## Home Page
 
 - Modern hero section
-- Featured categories
+- Featured product categories
 - Product highlights
 - Brand experience section
-- Responsive layout
 - Call-to-action sections
+- Responsive design
+- Modern UI
 
 ---
 
@@ -45,7 +50,7 @@ Nexora provides a modern shopping experience with:
 Users can:
 
 - Browse available products
-- Search products
+- Search for products
 - Filter products
 - Sort products by price
 - View product information
@@ -73,10 +78,10 @@ Users can:
 - Add products to wishlist
 - Remove products from wishlist
 - View saved products
-- See wishlist item count
+- View wishlist item count
 - Add wishlist products directly to cart
 
-The wishlist is connected to the backend and persists through the database.
+Wishlist data is persisted through the backend and Supabase database.
 
 ---
 
@@ -89,21 +94,30 @@ Users can:
 - Update product quantities
 - View product prices
 - View total cart value
-- See cart item count
+- View cart item count
 
-The cart communicates with the backend through REST APIs.
+Cart operations are handled through REST APIs provided by the Express backend.
+
+---
+
+## Search
+
+The application provides product search functionality.
+
+Users can search for products directly from the navigation bar and receive filtered product results.
 
 ---
 
 ## Notifications
 
-The application uses toast notifications to provide feedback for actions such as:
+Nexora uses toast notifications to provide feedback for important actions, including:
 
 - Product added to cart
 - Product added to wishlist
 - Product removed from wishlist
 - Product removed from cart
-- Failed API requests
+- API request failures
+- Other user actions
 
 ---
 
@@ -118,7 +132,7 @@ Nexora is designed to work across different screen sizes.
 - Tablet
 - Mobile
 
-The navigation, product grids, shopping cart, wishlist, and other sections adapt to smaller screens.
+The navigation, product grids, shopping cart, wishlist, and other sections adapt to smaller screen sizes.
 
 ---
 
@@ -128,7 +142,7 @@ The navigation, product grids, shopping cart, wishlist, and other sections adapt
 
 - React.js
 - React Router
-- Vite
+- JavaScript
 - CSS3
 - React Icons
 - React Toastify
@@ -138,40 +152,52 @@ The navigation, product grids, shopping cart, wishlist, and other sections adapt
 - Node.js
 - Express.js
 - REST APIs
+- CORS
 
 ## Database
 
-- MySQL
+- Supabase
+- PostgreSQL
 
-## Development & Deployment
+## Development Tools
 
 - Git
 - GitHub
 - VS Code
 - npm
-- Vercel
+
+## Deployment
+
+- Vercel — Frontend
+- Render — Backend
+- Supabase — Database
 
 ---
 
 # Application Architecture
 
-Nexora follows a frontend-backend architecture:
+Nexora follows a frontend-backend architecture where the React frontend communicates with the Express backend through REST APIs.
 
 ```text
-                    ┌────────────────────┐
-                    │      Nexora        │
-                    │   E-Commerce App   │
-                    └─────────┬──────────┘
-                              │
-                ┌─────────────┴─────────────┐
-                │                           │
-        ┌───────▼────────┐        ┌────────▼────────┐
-        │    Frontend    │        │     Backend     │
-        │   React + Vite │◄──────►│ Node + Express  │
-        └────────────────┘  API   └────────┬────────┘
-                                           │
-                                           │
-                                   ┌───────▼────────┐
-                                   │      MySQL     │
-                                   │    Database    │
-                                   └────────────────┘
+                         ┌──────────────────────┐
+                         │        Nexora        │
+                         │   E-Commerce App     │
+                         └──────────┬───────────┘
+                                    │
+                                    │
+                    ┌───────────────┴───────────────┐
+                    │                               │
+             ┌──────▼───────┐               ┌───────▼──────┐
+             │   Frontend   │               │   Backend    │
+             │    React     │◄─────────────►│   Express    │
+             │ React Router │    REST API   │   Node.js    │
+             └──────┬───────┘               └───────┬──────┘
+                    │                               │
+                    │                               │
+                 Vercel                          Render
+                                                    │
+                                                    │
+                                             ┌──────▼───────┐
+                                             │   Supabase   │
+                                             │  PostgreSQL  │
+                                             └──────────────┘
